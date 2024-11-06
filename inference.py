@@ -12,11 +12,11 @@ from tqdm import tqdm
 import gc
 import ray
 
-from eval.evaluate import evaluate
-from utils.utils import set_seed, load_jsonl, save_jsonl, construct_prompt
-from utils.parser import *
-from utils.data_loader import load_data
-from utils.python_executor import PythonExecutor
+from evaluate import evaluate
+from utils import set_seed, load_jsonl, save_jsonl, construct_prompt
+from parser import *
+from data_loader import load_data
+from python_executor import PythonExecutor
 
 MAX_CODE_FIX_RETRIES = 4
 
