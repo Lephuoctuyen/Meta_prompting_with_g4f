@@ -4,10 +4,10 @@ from tqdm import tqdm
 from pebble import ProcessPool
 from concurrent.futures import TimeoutError
 
-from eval.grader import *
-from utils.parser import *
-from utils.utils import load_jsonl
-from utils.python_executor import PythonExecutor
+from grader import *
+from parser import *
+from utils import load_jsonl
+from python_executor import PythonExecutor
 
 
 def evaluate(data_name, prompt_type, samples: list=None, file_path: str=None, max_num_samples=None, use_train_prompt_format=False, code_concat = False, max_func_call = 4, code_exec_warning = False, max_code_fix_retries = 4, execute=False):
