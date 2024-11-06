@@ -5,7 +5,7 @@ from datasets import load_dataset, Dataset, concatenate_datasets
 from utils import load_jsonl
 
 def load_data(data_name, split):
-    data_file = f"data/{data_name}/{split}.json"
+    data_file = f"/kaggle/input/data-math/data/{data_name}/{split}.json"
     if os.path.exists(data_file):
         examples = list(load_jsonl(data_file))
     else:
