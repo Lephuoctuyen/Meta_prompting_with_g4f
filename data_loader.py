@@ -2,7 +2,7 @@ import os
 import json
 import random
 from datasets import load_dataset, Dataset, concatenate_datasets
-from utils.utils import load_jsonl
+from utils import load_jsonl
 
 def load_data(data_name, split):
     data_file = f"data/{data_name}/{split}.json"
